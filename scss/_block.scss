@@ -1,0 +1,113 @@
+@mixin display() {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin font($fs, $lh, $fw) {
+    font-size: $fs;
+    line-height: $lh;
+    font-weight: $fw;
+}
+
+.block{
+    display: flex;
+    justify-content: space-between;
+}
+
+.block__input--search{
+    border: 1px solid #BDBDBD;
+    border-radius: 10px;
+    width: 345px;
+    height: 54px;
+    padding: 17px 0 17px 20px;
+    @include font(18px, 21px, 400);
+    color: #828282;
+    background: url(../image/Search.png) no-repeat;
+    background-position: bottom 50% right 13.24px;
+    background-color: #F2F2F2;
+}
+
+.block--items{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.block--items-margin{
+    margin-bottom: 30px;
+}
+
+.block--back{
+    font-size: 0;
+}
+
+.block--back-margin{
+    margin-bottom: 44px;
+}
+
+.block--item-feed{
+    width: 315px;
+    padding:20px 20px 30px 20px;
+    background:Gray 6;
+    border: 1px solid #F2F2F2;
+    box-shadow: -8px -8px 15px #FFFFFF, 8px 8px 15px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+}
+
+.block--reletive{
+    position: relative;
+}
+
+.block--radio-button{
+    margin: 0 0 25px 0;
+}
+
+.block--form{
+    display: flex;
+    flex-direction: column;
+}
+
+.block__button--more{
+    background: #3FCF5E;
+    border: 1px solid rgba(5, 175, 52, 0.53);
+    border-radius: 10px;
+    width: 161px;
+    height: 45px;
+    @include font(18px, 21px,  600);
+    color: #FFFFFF;
+    text-align: center;
+    text-decoration: none;
+    padding: 12px 0;
+}
+
+.block__button--buy{
+    border: 1px solid #BDBDBD;
+    border-radius: 10px;
+    background: #FFFFFF;
+    width: 46px;
+    height: 45px;
+    @include display();
+}
+
+.block--items-feed{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 46px;
+    margin-bottom: 50px;
+}
+
+.block--pages{
+    display: flex;
+    @include display();
+    gap: 30px;
+}
+
+.block--page{
+    display: flex;
+    gap: 20px;
+    @include font(18px, 21px, 700);
+}
+
+.block--pages__link{
+    display: flex;
+    align-self: center;
+}
