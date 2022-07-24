@@ -1,0 +1,43 @@
+.image{
+    display: flex;
+    align-self: center;
+}
+
+.image--tel{
+    width: 19.50px;
+    height: 19.5px;
+}
+
+.image--tel-margin{
+    margin-right: 11.25px;
+}
+
+.image--backet{
+    margin-right: 17.50px;
+}
+
+.image--arrow{
+    width: 8.75px;
+    height: 4.38px;
+}
+
+.image--arrow-margin{
+    margin-left: 7px;
+}
+
+.image--elipse{
+    margin: 0 15px;
+}
+
+.image--green-arrow{
+    display: inline;
+    padding-right: 10.75px;
+}
+
+.image--vk{
+    margin-right: 20px;
+}
+
+.image--arrow-gray{
+    transform: rotate(180deg);
+}

@@ -1,0 +1,125 @@
+@mixin decoration() {
+    text-decoration: none;
+}
+
+@mixin font($fs, $lh, $fw) {
+    font-size: $fs;
+    line-height: $lh;
+    font-weight: $fw;
+}
+
+@mixin margin($mt, $mr, $mb, $ml) {
+    margin-top: $mt;
+    margin-right: $mr;
+    margin-bottom: $mb;
+    margin-left: $ml;
+}
+
+@mixin color($cl) {
+    color: $cl;
+}
+
+@mixin new() {
+    position: absolute;
+    top: 0%;
+    right:2%;
+}
+
+.text--number{
+    display: flex;
+    align-self: center;
+    @include decoration();
+    @include color(#000);
+    @include font(18px, 21px, 400);
+    @include margin(0, 62.50px, 0, 11.25px);
+}
+
+.text--item{
+    display: inline;
+    @include color(#BDBDBD);
+    @include font(18px, 21px, 500);
+    @include decoration();
+}
+
+.text--green-arrow{
+    display: inline;
+    @include font(20px, 24px, 500);
+    @include color(#333333);
+    @include decoration();
+}
+
+.text--gram{
+    @include font(18px, 21px, 500);
+    @include margin(0, 0, 0, 0);
+    padding: 0;
+    width: 45px;
+}
+
+.text--title{
+    @include font(24px, 130%, 600);
+    @include color(#333333);
+}
+
+.text--title-margin{
+    @include margin(25px, 0, 5px, 0);
+}
+
+.text--feed{
+    @include font(16px, 130%, 400);
+    @include color( #828282);
+}
+
+.text--feed-margin{
+    @include margin(0, 0, 25px, 0);
+}
+
+.text--price{
+    @include font(22px, 27px, 700);
+    @include color(#333333);
+}
+
+.text--price{
+    @include margin(0, 0, 25px, 0);
+}
+
+.text--number-footer{
+    @include color(#fff);
+    @include margin(0, 0, 0, 0);
+}
+
+.text--footer{
+    @include font(18px, 21px, 500);
+    @include color(#fff);
+    @include decoration();
+}
+
+.text--footer-margin{
+    @include margin(0, 47px, 0, 0);
+}
+
+.text--green-page{
+    @include color(#219653);
+    @include decoration();
+}
+
+.text--gray-page{
+    @include color(#828282);
+    @include decoration();
+}
+
+.text--new{
+    background: #333333;
+    border-radius: 10px;
+    width: 89px;
+    padding: 9px 16px;
+    @include font(14px, 17px, 600);
+    @include color(#fff);
+}
+
+.text--new-one{
+    @include new();
+}
+
+.text--new-two{
+    @include new();
+}
