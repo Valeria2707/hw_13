@@ -23,9 +23,26 @@ body {
   color: #828282;
 }
 
+input:checked + label {
+  display: flex;
+  justify-content: center;
+  padding: 4px 0;
+  background: #FFFFFF;
+  border: 1px solid #3ECF5E;
+  border-radius: 5px;
+  width: 68px;
+  height: 29px;
+  cursor: pointer;
+}
+
 .block {
   display: flex;
   justify-content: space-between;
+}
+
+.block__link--image {
+  display: flex;
+  align-self: center;
 }
 
 .block__input--search {
@@ -132,6 +149,10 @@ body {
 .block--pages__link {
   display: flex;
   align-self: center;
+}
+
+.block--fotter {
+  width: 195px;
 }
 
 .image {
@@ -352,18 +373,6 @@ body {
   color: #4F4F4F;
   display: flex;
   flex-wrap: nowrap;
-}
-
-.label--gram-main {
-  display: flex;
-  justify-content: center;
-  padding: 4px 0;
-  background: #FFFFFF;
-  border: 1px solid #3ECF5E;
-  border-radius: 5px;
-  width: 68px;
-  height: 29px;
-  cursor: pointer;
 }
 
 .label--gram {
