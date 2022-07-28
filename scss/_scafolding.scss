@@ -22,3 +22,15 @@ body{
     line-height: 21px;
     color: #828282;
 }
+
+input:checked + label{
+    display: flex;
+    justify-content: center;
+    padding: 4px 0;
+    background: #FFFFFF;
+    border: 1px solid #3ECF5E;
+    border-radius: 5px;
+    width: 68px;
+    height: 29px;
+    cursor: pointer;
+}

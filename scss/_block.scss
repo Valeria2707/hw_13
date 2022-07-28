@@ -14,6 +14,11 @@
     justify-content: space-between;
 }
 
+.block__link--image{
+    display: flex;
+    align-self: center;
+}
+
 .block__input--search{
     border: 1px solid #BDBDBD;
     border-radius: 10px;
@@ -110,4 +115,8 @@
 .block--pages__link{
     display: flex;
     align-self: center;
+}
+
+.block--fotter{
+    width: 195px;
 }
